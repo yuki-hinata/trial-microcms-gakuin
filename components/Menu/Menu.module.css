@@ -1,0 +1,64 @@
+.menuContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-bottom: 80px;
+}
+
+.menuContainer h2 {
+  font-size: min(10vw, 180px);
+  margin: 0 auto;
+  writing-mode: vertical-rl;
+  line-height: 0.85em;
+}
+
+.menuContainer h2 p {
+  margin: 0;
+}
+
+.leftSection {
+  width: 68%;
+}
+
+.rightSection {
+  width: 32%;
+}
+
+.menuContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  max-width: 1180px;
+}
+
+.priceContainer {
+  display: flex;
+  width: 100%;
+}
+
+.priceContainer p {
+  flex: 1;
+  background-color: #fff;
+  padding: 24px;
+  margin: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .leftSection {
+    width: 76%;
+  }
+
+  .rightSection {
+    width: 24%;
+  }
+
+  .menuContent {
+    font-size: 3vw;
+    gap: 8px;
+  }
+
+  .priceContainer p {
+    padding: 16px;
+  }
+}

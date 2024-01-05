@@ -1,0 +1,78 @@
+.staffContainer {
+  padding-bottom: 80px;
+  display: flex;
+  gap: 40px;
+  width: 100%;
+}
+
+.leftSection {
+  width: 15%;
+}
+
+.rightSection {
+  width: 85%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.staffContainer h2 {
+  font-size: min(10vw, 180px);
+  margin: 0 auto;
+  writing-mode: vertical-rl;
+  line-height: 0.85em;
+}
+
+.staffContainer h2 p {
+  margin: 0;
+}
+
+.staffContent {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.image {
+  margin: 0;
+  padding: 0;
+}
+
+.staffContent img {
+  width: 100%;
+  height: min(40vw, 600px);
+  object-fit: cover;
+}
+
+.text {
+  background-color: #fff;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: min(2vw, 20px);
+}
+
+.jpName {
+  font-weight: bold;
+  font-size: min(3vw, 48px);
+}
+
+@media screen and (max-width: 767px) {
+  .staffContainer {
+    gap: 16px;
+  }
+
+  .rightSection {
+    gap: 8px;
+  }
+
+  .text {
+    padding: 16px 16px;
+    font-size: 3vw;
+  }
+
+  .jpName {
+    font-size: 3.5vw;
+  }
+}

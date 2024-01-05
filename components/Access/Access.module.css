@@ -1,0 +1,75 @@
+.accessContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-bottom: 80px;
+}
+
+.accessContainer h2 {
+  font-size: min(10vw, 180px);
+  margin: 0 auto;
+  writing-mode: vertical-rl;
+  line-height: 0.85em;
+}
+
+.accessContainer h2 p {
+  margin: 0;
+}
+
+.leftSection {
+  width: 76%;
+}
+
+.rightSection {
+  width: 24%;
+}
+
+.accessContent {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  /* gap: 16px; */
+  max-width: 1180px;
+}
+
+.accessDescription {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  background-color: #fff;
+  padding: 24px;
+  gap: 8px;
+}
+
+.accessDescription p {
+  margin: 0;
+}
+
+.map {
+  width: 100%;
+  position: relative;
+  padding-top: 56.25%;
+}
+
+.map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .leftSection {
+    width: 76%;
+  }
+
+  .rightSection {
+    width: 24%;
+  }
+
+  .accessContent {
+    font-size: 3vw;
+  }
+}
